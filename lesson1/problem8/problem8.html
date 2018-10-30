@@ -8,7 +8,38 @@
 
 	<!-- The only part of this file you should edit is the text between the style tags below. -->
 	<style type="text/css">
+		.container{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 2fr 1fr 1fr 2fr;
+			grid-template-areas:
+				"B G"
+				"R G"
+				"R Y"
+				"P Y"
+				"P Y";
+		}
 		
+		#blue{
+			grid-area: B;
+		}
+
+		#green{
+			grid-area: G;
+		}
+
+		#red{
+			grid-area: R;
+		}
+
+		#purple{
+			grid-area: P;
+		}
+		
+		#yellow{
+			grid-area: Y;
+		}
+
 	</style>
 
 	<!-- Do NOT edit any code below this line. -->
